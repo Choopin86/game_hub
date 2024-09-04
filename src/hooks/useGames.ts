@@ -28,7 +28,7 @@ const useGames = () => {
             setError(err.message)});
 
     
-    return () => controller.abort;
+    return () => controller.abort();
   }, []);
 
   return { games, error }
